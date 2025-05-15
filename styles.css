@@ -1,8 +1,9 @@
-div {
+.cell {
     background-color: red;
+    border: 1px solid;
     
 }
-#container {
+.container {
     display: flex;
     background-color: aqua;
 }
