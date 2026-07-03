@@ -11,9 +11,9 @@ function makeGrid(row){
         cell.style.width = `${cellSize}px`;
         cell.style.height = `${cellSize}px`;
         grid.style.width = `${row * cellSize}px`;
-        grid.style.width = `${row * cellSize}px`;
         cell.textContent = ''
         grid.appendChild(cell);
     }
 };
-makeGrid(14);
+makeGrid(16);
+// just confirm
