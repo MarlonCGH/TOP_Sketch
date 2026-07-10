@@ -12,8 +12,11 @@ function makeGrid(row){
         cell.style.height = `${cellSize}px`;
         grid.style.width = `${row * cellSize}px`;
         cell.textContent = ''
+        cell.addEventListener('mouseover', ()=> {
+            cell.style.backgroundColor = "black";
+        });
         grid.appendChild(cell);
     }
 };
 makeGrid(16);
-// just confirm
+
