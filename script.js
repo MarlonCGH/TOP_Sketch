@@ -1,6 +1,6 @@
 /** @type {HTMLElement | null} */
 const grid = document.querySelector(".container");
-
+const gridSize = document.querySelector("#gridsize");
 
 function makeGrid(row){
  
