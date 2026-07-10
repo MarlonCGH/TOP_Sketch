@@ -1,6 +1,6 @@
 /** @type {HTMLElement | null} */
 const grid = document.querySelector(".container");
-const gridSize = document.querySelector("#gridsize");
+const gridSize = document.querySelector("#changesize");
 
 function makeGrid(row){
  
@@ -20,3 +20,7 @@ function makeGrid(row){
 };
 makeGrid(16);
 
+function setGridSize(){
+    let newSize = prompt("How big a board? Enter a number between 2 and 100", 16)
+}
+gridSize.addEventListener('click', setGridSize);
