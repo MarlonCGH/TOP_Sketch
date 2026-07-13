@@ -21,15 +21,10 @@ function makeGrid(row){
 makeGrid(16);
 
 function setGridSize(){
-    let newSize = prompt("How big a board? Enter a number between 2 and 100", 16)
+    let newSize = parseInt(prompt("How big a board? Enter a number between 2 and 100", 16));
 
-    if (newSize !== int) {
-        "Please input a number between 2 and 100 using integers";
-    } else if (newSize <2 || newSize >100) {
-        "Number is outside of bounds, try again!";
-    } else {
-        alert("Hurray!");
+    if (Number.isInteger(newSize)) {
+        console.log("That's an integer!");
     }
-
-}
+};
 gridSize.addEventListener('click', setGridSize);
