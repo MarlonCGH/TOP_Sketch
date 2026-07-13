@@ -23,8 +23,12 @@ makeGrid(16);
 function setGridSize(){
     let newSize = parseInt(prompt("How big a board? Enter a number between 2 and 100", 16));
 
-    if (Number.isInteger(newSize)) {
-        console.log("That's an integer!");
-    }
+    if (Number.isInteger(newSize) && newSize >= 2 && newSize <= 100) {
+        console.log("That's an intege within the restriction!");
+    }  else if (newSize <= 2 || newSize >= 100) {
+        console.log("That's an integer outside of restrction.")
+    } else {
+        console.log("That's not a number in numerical form")
+    };
 };
 gridSize.addEventListener('click', setGridSize);
