@@ -24,11 +24,16 @@ function setGridSize(){
     let newSize = parseInt(prompt("How big a board? Enter a number between 2 and 100", 16));
 
     if (Number.isInteger(newSize) && newSize >= 2 && newSize <= 100) {
-        console.log("That's an intege within the restriction!");
+        grid.replaceChildren();
+/*  This was my initial answer, found the other one and I think its better? 
+      while (grid.firstChild) {
+            grid.removeChild(grid.firstChild);
+        }; */
+        makeGrid(newSize);
     }  else if (newSize <= 2 || newSize >= 100) {
-        console.log("That's an integer outside of restrction.")
+        alert("That's an integer outside of restrction.")
     } else {
-        console.log("That's not a number in numerical form")
+        alert("That's not a number in numerical form")
     };
 };
 gridSize.addEventListener('click', setGridSize);
