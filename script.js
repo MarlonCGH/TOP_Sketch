@@ -33,7 +33,7 @@ function setGridSize(){
     }  else if (newSize <= 2 || newSize >= 100) {
         alert("That's an integer outside of restrction.")
     } else {
-        alert("That's not a number in numerical form")
+        alert("That's not a number nor number in numerical form")
     };
 };
 gridSize.addEventListener('click', setGridSize);
