@@ -6,11 +6,9 @@ function makeGrid(row){
  
     for (let i = 0; i < row * row; i++){
         const cell = document.createElement("div");
-        const cellSize = 25;
         cell.setAttribute("class", "cell");
-        cell.style.width = `${cellSize}px`;
-        cell.style.height = `${cellSize}px`;
-        grid.style.width = `${row * cellSize}px`;
+        cell.style.width = `${800 / row}px`;
+        cell.style.height = `${800 / row}px`;
         cell.textContent = ''
         cell.addEventListener('mouseover', ()=> {
             cell.style.backgroundColor = "black";
