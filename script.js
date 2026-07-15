@@ -1,4 +1,3 @@
-/** @type {HTMLElement | null} */
 const grid = document.querySelector(".container");
 const gridSize = document.querySelector("#changesize");
 
